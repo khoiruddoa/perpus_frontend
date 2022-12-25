@@ -56,7 +56,7 @@ class CategoryController extends Controller
         $payload = [
 
             "category_name" => $request->input("category_name"),
-            "address" => $request->input("description")
+            "description" => $request->input("description")
         ];
 
 

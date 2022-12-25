@@ -35,14 +35,12 @@
     <div class="d-flex flex-column justify-content-center align-items-center">
         <h1>Detail</h1>
         <div class="card" style="width: 18rem;">
-            <img src="{{ $author['photo'] }}" class="card-img-top" alt="">
+
             <div class="card-body">
-                <h3 class="card-title">{{ $author['author_name'] }}</h3>
-                <p class="card-text">{{ $author['address'] }}</p>
-                <p class="card-text">{{ $author['telephone'] }}</p>
-                <p class="card-text">{{ $author['email'] }}</p>
-                <p class="card-text">{{ $author['bio'] }}</p>
-                <a href="{{ route('editauthor', ['id' => $author['id']]) }}" class="btn btn-primary">edit</a>
+                <h3 class="card-title">{{ $category['category_name'] }}</h3>
+                <p class="card-text">{{ $category['description'] }}</p>
+
+                <a href="{{ route('editcategory', ['id' => $category['id']]) }}" class="btn btn-primary">edit</a>
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

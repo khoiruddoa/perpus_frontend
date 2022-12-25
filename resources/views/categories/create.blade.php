@@ -37,7 +37,7 @@
 
         <form action="{{ route('categorystore') }}" method="post" enctype="multipart/form-data">
             @csrf
-           
+
             <div class="mb-3">
                 <label for="title" class="form-label">Nama</label>
                 <input type="text" name="category_name" class="form-control">
@@ -45,20 +45,7 @@
             <div class="mb-3">
                 <label for="address" class="form-label">description
                 </label>
-                <input type="text" name="address" class="form-control">
-            </div>
-            <div class="mb-3">
-                <label for="telephone" class="form-label">telephone</label>
-                <input type="number" name="telephone" class="form-control">
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">email</label>
-                <input type="email" name="email" class="form-control">
-            </div>
-            <div class="mb-3">
-                <label for="bio" class="form-label">Bio
-                </label>
-                <input type="text" name="bio" class="form-control">
+                <input type="text" name="description" class="form-control">
             </div>
 
 

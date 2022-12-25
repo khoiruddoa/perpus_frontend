@@ -33,37 +33,23 @@
         </div>
     </nav>
     <div class="d-flex flex-column justify-content-center align-items-center">
-        <h1>form author</h1>
+        <h1>form category</h1>
 
-        <form action="{{ route('authorupdate', ['id' => $author['id']]) }}" method="post"
+        <form action="{{ route('categoryupdate', ['id' => $category['id']]) }}" method="post"
             enctype="multipart/form-data">
             @csrf
-            <div class="mb-3">
-                <label for="formFile" class="form-label">photo</label>
-                <input class="form-control" name="photo" type="file" id="formFile">
-            </div>
+
             <div class="mb-3">
                 <label for="title" class="form-label">Nama</label>
-                <input type="text" name="author_name" class="form-control" value="{{ $author['author_name'] }}">
+                <input type="text" name="category_name" class="form-control"
+                    value="{{ $category['category_name'] }}">
             </div>
             <div class="mb-3">
-                <label for="address" class="form-label">Addres
+                <label for="description" class="form-label">description
                 </label>
-                <input type="text" name="address" class="form-control" value="{{ $author['address'] }}">
+                <input type="text" name="description" class="form-control" value="{{ $category['description'] }}">
             </div>
-            <div class="mb-3">
-                <label for="telephone" class="form-label">telephone</label>
-                <input type="number" name="telephone" value="{{ $author['telephone'] }}" class="form-control">
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">email</label>
-                <input type="email" name="email" class="form-control" value="{{ $author['email'] }}">
-            </div>
-            <div class="mb-3">
-                <label for="bio" class="form-label">Bio
-                </label>
-                <input type="text" name="bio" class="form-control" value="{{ $author['bio'] }}">
-            </div>
+
 
 
 
